@@ -30,7 +30,6 @@ const Cast = () => {
                         ? `https://image.tmdb.org/t/p/w500${profile_path}`
                         : 'https://www.memecreator.org/static/images/memes/5055235.jpg'
                     }
-                    // src={`https://image.tmdb.org/t/p/w500${profile_path}`}
                     alt={name}
                   />
                   <h2>{name}</h2>

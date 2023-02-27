@@ -29,11 +29,12 @@ const MovieDetails = () => {
     <div>
       <Button onClick={handleClick}>Go back</Button>
       {movie && (
-        <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+        <div
+          style={{ display: 'flex', flexWrap: 'wrap', flexDirection: 'column' }}
+        >
           <div
             style={{
               display: 'flex',
-
               gap: 15,
               marginLeft: 20,
             }}
