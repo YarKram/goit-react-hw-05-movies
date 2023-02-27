@@ -6,6 +6,8 @@ import { CastList } from './Cast.styled';
 const Cast = () => {
   const { movieId } = useParams();
 
+  console.log(movieId);
+
   const [cast, setCast] = useState(null);
 
   useEffect(() => {
