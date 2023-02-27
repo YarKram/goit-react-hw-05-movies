@@ -21,10 +21,16 @@ const Cast = () => {
           <>
             {cast.map(({ id, name, character, profile_path }) => {
               return (
-                <li key={id}>
+                <li style={{ maxWidth: '200px' }} key={id}>
                   <img
                     width={200}
-                    src={`https://image.tmdb.org/t/p/w500${profile_path}`}
+                    height={300}
+                    src={
+                      profile_path
+                        ? `https://image.tmdb.org/t/p/w500${profile_path}`
+                        : 'https://www.memecreator.org/static/images/memes/5055235.jpg'
+                    }
+                    // src={`https://image.tmdb.org/t/p/w500${profile_path}`}
                     alt={name}
                   />
                   <h2>{name}</h2>
