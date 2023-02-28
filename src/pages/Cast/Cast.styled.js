@@ -6,3 +6,9 @@ export const CastList = styled.ul`
   gap: 10px;
   list-style: none;
 `;
+
+export const Warning = styled.p`
+  color: red;
+  font-size: 20px;
+  margin-left: 10px;
+`;

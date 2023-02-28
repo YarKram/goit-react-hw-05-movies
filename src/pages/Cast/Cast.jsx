@@ -1,7 +1,7 @@
 import { fetchMovieCast } from 'components/api/api';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { CastList } from './Cast.styled';
+import { CastList, Warning } from './Cast.styled';
 
 const Cast = () => {
   const { movieId } = useParams();
@@ -17,6 +17,9 @@ const Cast = () => {
   return (
     <div>
       <CastList>
+        {cast && cast.length === 0 && (
+          <Warning>We do not have any actors here</Warning>
+        )}
         {cast && (
           <>
             {cast.map(({ id, name, character, profile_path }) => {
